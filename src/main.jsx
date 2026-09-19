@@ -174,7 +174,7 @@ function App() {
     </section>
 
     <section className="contact" id="contato"><div className="contact-glow" /><div className="wrap contact-content"><p className="section-kicker">04 / CONTATO</p><h2>Vamos criar algo<br /><em>incrível juntos?</em></h2><a href="mailto:rafaelamado.dev@gmail.com" className="email">rafaelamado.dev@gmail.com<Arrow /></a><p className="contact-note">Disponível para oportunidades, projetos e boas conversas.</p></div></section>
-    <footer className="wrap"><a className="brand brand-image" href="#top" onClick={(event) => handleNav(event, '#top')}><img src={siteLogo} alt="Amado.dev" /></a><p>© 2026 · Feito com intenção e React.</p><div><a href="https://www.linkedin.com/in/rafael-amado-4786a0193/">LinkedIn</a><a href="#">GitHub</a></div></footer>
+    <footer className="wrap"><a className="brand brand-image" href="#top" onClick={(event) => handleNav(event, '#top')}><img src={siteLogo} alt="Amado.dev" /></a><p>© 2026 · Feito com intenção e React.</p><div><a href="https://www.linkedin.com/in/rafael-amado-4786a0193/">LinkedIn</a><a href="https://github.com/RafaelAmado97">GitHub</a></div></footer>
     <button className={`back-to-top ${showBackToTop ? 'is-visible' : ''}`} onClick={() => scrollTo('#top')} aria-label="Voltar ao início">
       <span>↑</span><small>TOPO</small>
     </button>
