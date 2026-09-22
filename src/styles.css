@@ -9,6 +9,35 @@
     --white: #f2f3f5
 }
 
+:root[data-theme='light'] {
+    --bg: #f7f8f3;
+    --panel: #ffffff;
+    --muted: #626b78;
+    --line: rgba(20, 30, 40, .14);
+    --lime: #5c7f1a;
+    --white: #16202a;
+}
+
+:root[data-theme='light'] body { color: var(--white) }
+:root[data-theme='light'] .expertise { background: #edf0e8 }
+:root[data-theme='light'] .contact { background: #e2e9d6 }
+:root[data-theme='light'] .intro, :root[data-theme='light'] .statement-grid div p, :root[data-theme='light'] .timeline div>p:not(.role-tag), :root[data-theme='light'] .service-grid p { color: #4f5a66 }
+:root[data-theme='light'] .statement h2 span, :root[data-theme='light'] .expertise h2 span, :root[data-theme='light'] .journey h2 span { color: #58646f }
+:root[data-theme='light'] .service-grid article:hover { background: #e3e9da }
+:root[data-theme='light'] .code-window, :root[data-theme='light'] .case-card { background: #f8faf5; color: #16202a; border-color: #b8c2af; box-shadow: 0 18px 38px #26321e24 }
+:root[data-theme='light'] pre { color: #263242 }
+:root[data-theme='light'] .floating-chip, :root[data-theme='light'] .service-motion b { background: #f6f8f1; color: #16202a; box-shadow: 0 7px 18px #26321e24 }
+:root[data-theme='light'] .case-item p, :root[data-theme='light'] .case-summary small { color: #596471 }
+:root[data-theme='light'] .email { color: #16202a }
+:root[data-theme='light'] .language-picker button.active, :root[data-theme='light'] .nav-contact, :root[data-theme='light'] .primary { color: #fff }
+
+.nav-tools { display: flex; align-items: center; gap: 12px }
+.language-picker { display: flex; padding: 3px; border: 1px solid var(--line); border-radius: 99px }
+.language-picker button, .theme-toggle { border: 0; background: transparent; color: var(--muted); font: 500 9px 'DM Mono'; cursor: pointer }
+.language-picker button { padding: 5px 6px; border-radius: 99px }
+.language-picker button.active { background: var(--lime); color: #11170a }
+.theme-toggle { width: 30px; height: 30px; border: 1px solid var(--line); border-radius: 50%; font-size: 15px; color: var(--white) }
+
 * {
     box-sizing: border-box
 }
@@ -715,6 +744,9 @@ footer div {
     .nav-contact {
         display: none
     }
+
+    .nav-tools { margin-left: auto; gap: 8px }
+    .language-picker button { padding: 5px }
 
     .hero {
         grid-template-columns: 1fr;

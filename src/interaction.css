@@ -1,19 +1,22 @@
 .back-to-top {
   position: fixed;
-  right: 26px;
+  left: 26px;
   bottom: 25px;
   z-index: 12;
-  width: 52px;
-  height: 52px;
-  border: 1px solid #4c566b;
-  border-radius: 50%;
+  width: auto;
+  min-width: 52px;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
   background: #141a29e8;
   color: var(--lime);
   backdrop-filter: blur(12px);
   cursor: pointer;
-  display: grid;
-  place-items: center;
-  gap: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
   opacity: 0;
   transform: translateY(18px) scale(.8);
   pointer-events: none;
@@ -206,7 +209,9 @@ footer .brand-image img {
 
 @media (max-width: 780px) {
   .back-to-top {
-    right: 17px;
+    left: 17px;
     bottom: 17px;
+    height: 36px;
+    padding: 0 10px;
   }
 }
